@@ -11,6 +11,12 @@ class DocumentsController < ApplicationController
   end
 
   def create
+    @document = Document.new(document_parameters)
+    if @document.save
+      redirect_to @document
+    else
+      'render'
+    end
   end
   
   def edit
@@ -27,7 +33,7 @@ class DocumentsController < ApplicationController
     def find_document
     end
     
-    def document_paramaeters
+    def document_parameters
     end
     
 end
