@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>DocumentsManager</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
+!!!
+%html
+%head
+  %title DocumentManager 
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
+    = csrf_meta_tags 
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
