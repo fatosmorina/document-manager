@@ -8,10 +8,10 @@
 %body
   %header
     .header_inner
-      = link_to "DocumentManager", root_path
+      = link_to "DocumentManager", root_path, id: "logo"
       %nav
         - if user_signed_in?
-          = link_to "Add new document", new_document_path
+          = link_to "New", new_document_path
           = link_to "Sign Out", destroy_user_session_path, method: :delete
 
         - else
