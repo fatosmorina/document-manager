@@ -14,7 +14,7 @@ class DocumentsController < ApplicationController
   end
 
   def create
-    @document = Document.new(document_parameters)
+    @document = current_user.documents.build(document_parameters)
     
     if @document.save
       redirect_to @document
