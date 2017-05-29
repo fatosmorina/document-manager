@@ -1,5 +1,17 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 
 // STYLING FOR WELCOME PAGE
+$dark_gray: #2B2E2E;
+$light_gray: #C0C1C1;
+$green: #529ECC;
+
+@mixin bold_font {
+  font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
 
 #banner {
 	background-image: url(image_path("welcome_banner_image.jpg"));
@@ -44,8 +56,7 @@
 }
 
 #callouts {
-	background-image: url(http://www.fatosmorina.com/wp-content/uploads/2017/05/background.jpg);
-  
+	background-image: image-url("callout_background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
