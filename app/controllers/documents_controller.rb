@@ -26,5 +26,7 @@ class DocumentsController < ApplicationController
     def find_document
     end
     
+    def document_paramaeters
+    end
     
 end
