@@ -1,5 +1,6 @@
 class DocumentsController < ApplicationController
 
+
   def index
   end
 
@@ -31,7 +32,8 @@ class DocumentsController < ApplicationController
   
   private
   
-    def find_document
+    def set_document
+      @document = Document.find(params[:id])
     end
     
     def document_parameters
