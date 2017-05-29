@@ -34,6 +34,7 @@ class DocumentsController < ApplicationController
     end
     
     def document_parameters
+      params.require(:document).permit(:title, :content)
     end
     
 end
