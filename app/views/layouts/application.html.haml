@@ -2,9 +2,9 @@
 %html
 %head
   %title DocumentManager 
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
-    = csrf_meta_tags 
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' 
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload' 
+  = csrf_meta_tags 
 %body
   %header
     .header_inner
@@ -16,10 +16,8 @@
 
         - else
           = link_to "Log In", new_user_session_path
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    
-    <%= yield %>
-  </body>
-</html>
+
+  %p.notice= notice
+  %p.alert= alert
+  = yield
+  
