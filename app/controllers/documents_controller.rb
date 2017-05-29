@@ -10,7 +10,7 @@ class DocumentsController < ApplicationController
   end
 
   def new
-    @document = Document.new
+    @document = current_user.documents.build
   end
 
   def create
