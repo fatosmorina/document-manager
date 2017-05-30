@@ -1,10 +1,10 @@
 .wrapper_with_padding
   #doc_show
-    %h1.title=  @doc.title
-    %p= simple_format(@doc.content)
+    %h1.title=  @document.title
+    %p= simple_format(@document.content)
 
     .buttons
 
-      = link_to "Edit", edit_doc_path(@document) , class: "button"
-      = link_to "Delete", doc_path(@document), method: :delete, data: {confirm: "Are You Sure ?"} , class: "button"
+      = link_to "Edit", edit_document_path(@document) , class: "button"
+      = link_to "Delete", document_path(@document), method: :delete, data: {confirm: "Are You Sure ?"} , class: "button"
 
